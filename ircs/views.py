@@ -8,16 +8,15 @@ def index(request):
 	return HttpResponse('<h1>Welcome</h1>')
 
 
-def showform(request):
+def beqas_form(request):
 	if request.method=="POST":
 		form=BeqasCreate(request.POST)
 		if form.is_valid():
 			form.save()
-			return HttpResponseRedirect('/ircs/index') #tera koi path dal dena
+			return HttpResponseRedirect('/ircs/index')
 
 	else :
 		form=BeqasCreate()
-		return HttpResponseRedirect('/ircs/index') 
 
-	return render(request,'ircs/beqas_form.html',{'form':form})
+	return render(request,'ircs/beqas.html',{'form':form})
 	
