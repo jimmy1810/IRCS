@@ -6,6 +6,8 @@ from django.urls import reverse
 class Beqas(models.Model):
 	choice=(('n','neg'),('1','1'),('2','2'),('3','3'),('4','4'))
 	patientId=models.PositiveIntegerField(default=0,unique=True,validators=[MinValueValidator(1)])
+	Methodology_HBsAg=models.CharField(blank=True , max_length=100)
+	CutOffValue_HBsAg=models.CharField(blank=True , max_length=100)
 	SampleNo1_OD_HBsAg=models.CharField(blank=True , max_length=100)
 	SampleNo2_OD_HBsAg=models.CharField(blank=True , max_length=100)
 	SampleNo3_OD_HBsAg=models.CharField(blank=True , max_length=100)
@@ -16,9 +18,10 @@ class Beqas(models.Model):
 	SampleNo3_Result_HBsAg=models.CharField(blank=True , max_length=100)
 	SampleNo4_Result_HBsAg=models.CharField(blank=True , max_length=100)
 	SampleNo5_Result_HBsAg=models.CharField(blank=True , max_length=100)
-	Methodology_HBsAg=models.CharField(blank=True , max_length=100)
-	CutOffValue_HBsAg=models.CharField(blank=True , max_length=100)
+	
 
+	Methodology_Anti_HIV=models.CharField(blank=True , max_length=100)
+	CutOffValue_Anti_HIV=models.CharField(blank=True , max_length=100)
 	SampleNo1_OD_Anti_HIV=models.CharField(blank=True , max_length=100)
 	SampleNo2_OD_Anti_HIV=models.CharField(blank=True , max_length=100)
 	SampleNo3_OD_Anti_HIV=models.CharField(blank=True , max_length=100)
@@ -29,9 +32,10 @@ class Beqas(models.Model):
 	SampleNo3_Result_Anti_HIV=models.CharField(blank=True , max_length=100)
 	SampleNo4_Result_Anti_HIV=models.CharField(blank=True , max_length=100)
 	SampleNo5_Result_Anti_HIV=models.CharField(blank=True , max_length=100)
-	Methodology_Anti_HIV=models.CharField(blank=True , max_length=100)
-	CutOffValue_Anti_HIV=models.CharField(blank=True , max_length=100)
+	
 
+	Methodology_Anti_HCV=models.CharField(blank=True , max_length=100)
+	CutOffValue_Anti_HCV=models.CharField(blank=True , max_length=100)
 	SampleNo1_OD_Anti_HCV=models.CharField(blank=True , max_length=100)
 	SampleNo2_OD_Anti_HCV=models.CharField(blank=True , max_length=100)
 	SampleNo3_OD_Anti_HCV=models.CharField(blank=True , max_length=100)
@@ -42,9 +46,10 @@ class Beqas(models.Model):
 	SampleNo3_Result_Anti_HCV=models.CharField(blank=True , max_length=100)
 	SampleNo4_Result_Anti_HCV=models.CharField(blank=True , max_length=100)
 	SampleNo5_Result_Anti_HCV=models.CharField(blank=True , max_length=100)
-	Methodology_Anti_HCV=models.CharField(blank=True , max_length=100)
-	CutOffValue_Anti_HCV=models.CharField(blank=True , max_length=100)
+	
 
+	Methodology_Syphilis=models.CharField(blank=True , max_length=100)
+	CutOffValue_Syphilis=models.CharField(blank=True , max_length=100)
 	SampleNo1_OD_Syphilis=models.CharField(blank=True , max_length=100)
 	SampleNo2_OD_Syphilis=models.CharField(blank=True , max_length=100)
 	SampleNo3_OD_Syphilis=models.CharField(blank=True , max_length=100)
@@ -55,16 +60,16 @@ class Beqas(models.Model):
 	SampleNo3_Result_Syphilis=models.CharField(blank=True , max_length=100)
 	SampleNo4_Result_Syphilis=models.CharField(blank=True , max_length=100)
 	SampleNo5_Result_Syphilis=models.CharField(blank=True , max_length=100)
-	Methodology_Syphilis=models.CharField(blank=True , max_length=100)
-	CutOffValue_Syphilis=models.CharField(blank=True , max_length=100)
-
+	
+	
+	Methodology_Malaria_Parasite=models.CharField(blank=True , max_length=100)
 	SampleNo6_Malaria_Parasite=models.CharField(blank=True , max_length=100)
 	SampleNo7_Malaria_Parasite=models.CharField(blank=True , max_length=100)
-	Methodology_Malaria_Parasite=models.CharField(blank=True , max_length=100)
 
+	
+	Methodology_Haemoglobin=models.CharField(blank=True , max_length=100)
 	SampleNo6_Haemoglobin=models.CharField(blank=True , max_length=100)
 	SampleNo7_Haemoglobin=models.CharField(blank=True , max_length=100)
-	Methodology_Haemoglobin=models.CharField(blank=True , max_length=100)
 
 	SampleNo6_Direct_Anti_globin_Test=models.BooleanField(default=True)
 
@@ -73,14 +78,12 @@ class Beqas(models.Model):
 	Anti_B_S6=models.CharField(default="1" , max_length=40 ,choices=choice)
 	Anti_ABpositive_S6=models.CharField(default="1" , max_length=40 ,choices=choice)
 	Anti_D_S6=models.CharField(default="1" , max_length=40 ,choices=choice)
-	srgMethod_S6=models.TextField(default="1")
 	Acells_S6=models.CharField(default="1" , max_length=40 ,choices=choice)
 	Bcells_S6=models.CharField(default="1" , max_length=40 ,choices=choice)
 	Ocells_S6=models.CharField(default="1" , max_length=40 ,choices=choice)
 	Result_S6=models.CharField(blank=True , max_length=100)
 			
-	cft_method_ABO_and_Rh_on_Donors=models.CharField(blank=True , max_length=100)
-	srgMethod_ABO_and_Rh_on_Donors=models.CharField(blank=True , max_length=100)
+	method_ABO_and_Rh_on_Donors=models.CharField(blank=True , max_length=100)
 	Anti_A_S7=models.CharField(default="1" , max_length=40 ,choices=choice)
 	Anti_B_S7=models.CharField(default="1" , max_length=40 ,choices=choice)
 	Anti_ABpositive_S7=models.CharField(default="1" , max_length=40 ,choices=choice)
