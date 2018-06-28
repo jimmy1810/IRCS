@@ -61,12 +61,12 @@ class Beqas(models.Model):
 	SampleNo4_Result_Syphilis=models.CharField(blank=True , max_length=100)
 	SampleNo5_Result_Syphilis=models.CharField(blank=True , max_length=100)
 	
-	
+
 	Methodology_Malaria_Parasite=models.CharField(blank=True , max_length=100)
 	SampleNo6_Malaria_Parasite=models.CharField(blank=True , max_length=100)
 	SampleNo7_Malaria_Parasite=models.CharField(blank=True , max_length=100)
 
-	
+
 	Methodology_Haemoglobin=models.CharField(blank=True , max_length=100)
 	SampleNo6_Haemoglobin=models.CharField(blank=True , max_length=100)
 	SampleNo7_Haemoglobin=models.CharField(blank=True , max_length=100)
@@ -132,3 +132,4 @@ class Beqas(models.Model):
 	
 	Specifiy_additive=models.CharField(blank=True , max_length=100)
 	Specifiy_other_method=models.CharField(blank=True , max_length=100)	
+

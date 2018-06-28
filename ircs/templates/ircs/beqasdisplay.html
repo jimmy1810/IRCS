@@ -1,0 +1,403 @@
+<!DOCTYPEhtml>
+<htmllang="en">
+ 
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!--Optionaltheme-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+			<!--LatestcompiledandminifiedJavaScript-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+	</script>
+	<style>
+		* {
+			color: #111111;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+
+		th,
+		td {
+			padding: 5px 10px;
+			text-align: left;
+		}
+
+		select {
+			font-size: 15px;
+		}
+	</style>
+</head>
+ 
+<body>
+	<h1 style="text-align:center;">BEQAS</h1>
+	<h3 style="text-align:center;">Blood Bank External Quality Assessment Scheme</h3>
+	<h3 style="text-align:center;">CycleNo.1</h3>
+	<div class="form-group">
+		<label class="control-label col-sm-2">
+			{{des.patientId.label_tag}}
+		</label>
+	<div class="col-sm-8"> {{des.patientId}}</div>
+	</div>
+	<div class="row">
+	<div class="col-sm-10 col-sm-offset-1">
+	<table style="width:50%">
+		<div class="col-sm-10 col-sm-offset-1">
+		<tr>
+			<th colspan=14>
+				<h2 style="text-align:left;">Samples1,2,3,4&5-SerumSpecimens</h2>
+			</th>
+		</tr>
+		<tr>
+			<th>S.No.</th>
+			<th>Parameter</th>
+			<th>Methodology</th>
+			<th>Cut-offvalue</th>
+			<th colspan=2>SampleNo.1</th>
+			<th colspan=2>SampleNo.2</th>
+			<th colspan=2>SampleNo.3</th>
+			<th colspan=2>SampleNo.4</th>
+			<th colspan=2>SampleNo.5</th>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>OD</td>
+			<td>Result</td>
+			<td>OD</td>
+			<td>Result</td>
+			<td>OD</td>
+			<td>Result</td>
+			<td>OD</td>
+			<td>Result</td>
+			<td>OD</td>
+			<td>Result</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>HBsAg</td>
+			<td>{{des.Methodology_HBsAg}}</td>
+			<td>{{des.CutOffValue_HBsAg}}</td>
+			<td>{{des.SampleNo1_OD_HBsAg}}</td>
+			<td>{{des.SampleNo2_OD_HBsAg}}</td>
+			<td>{{des.SampleNo3_OD_HBsAg}}</td>
+			<td>{{des.SampleNo4_OD_HBsAg}}</td>
+			<td>{{des.SampleNo5_OD_HBsAg}}</td>
+			<td>{{des.SampleNo1_Result_HBsAg}}</td>
+			<td>{{des.SampleNo2_Result_HBsAg}}</td>
+			<td>{{des.SampleNo3_Result_HBsAg}}</td>
+			<td>{{des.SampleNo4_Result_HBsAg}}</td>
+			<td>{{des.SampleNo5_Result_HBsAg}}</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Anti-HIV1&2</td>
+			<td>{{des.Methodology_Anti_HIV}}</td>
+			<td>{{des.CutOffValue_Anti_HIV}}</td>
+			<td>{{des.SampleNo1_OD_Anti_HIV}}</td>
+			<td>{{des.SampleNo2_OD_Anti_HIV}}</td>
+			<td>{{des.SampleNo3_OD_Anti_HIV}}</td>
+			<td>{{des.SampleNo4_OD_Anti_HIV}}</td>
+			<td>{{des.SampleNo5_OD_Anti_HIV}}</td>
+			<td>{{des.SampleNo1_Result_Anti_HIV}}</td>
+			<td>{{des.SampleNo2_Result_Anti_HIV}}</td>
+			<td>{{des.SampleNo3_Result_Anti_HIV}}</td>
+			<td>{{des.SampleNo4_Result_Anti_HIV}}</td>
+			<td>{{des.SampleNo5_Result_Anti_HIV}}</td>
+			</tr>
+			<tr>
+			<td>3</td>
+			<td>Anti-HCV</td>
+			<td>{{des.Methodology_Anti_HCV}}</td>
+			<td>{{des.CutOffValue_Anti_HCV}}</td>
+			<td>{{des.SampleNo1_OD_Anti_HCV}}</td>
+			<td>{{des.SampleNo2_OD_Anti_HCV}}</td>
+			<td>{{des.SampleNo3_OD_Anti_HCV}}</td>
+			<td>{{des.SampleNo4_OD_Anti_HCV}}</td>
+			<td>{{des.SampleNo5_OD_Anti_HCV}}</td>
+			<td>{{des.SampleNo1_Result_Anti_HCV}}</td>
+			<td>{{des.SampleNo2_Result_Anti_HCV}}</td>
+			<td>{{des.SampleNo3_Result_Anti_HCV}}</td>
+			<td>{{des.SampleNo4_Result_Anti_HCV}}</td>
+			<td>{{des.SampleNo5_Result_Anti_HCV}}</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Syphilis</td>
+			<td>{{des.Methodology_Syphilis}}</td>
+			<td>{{des.CutOffValue_Syphilis}}</td>
+			<td>{{des.SampleNo1_OD_Syphilis}}</td>
+			<td>{{des.SampleNo2_OD_Syphilis}}</td>
+			<td>{{des.SampleNo3_OD_Syphilis}}</td>
+			<td>{{des.SampleNo4_OD_Syphilis}}</td>
+			<td>{{des.SampleNo5_OD_Syphilis}}</td>
+			<td>{{des.SampleNo1_Result_Syphilis}}</td>
+			<td>{{des.SampleNo2_Result_Syphilis}}</td>
+			<td>{{des.SampleNo3_Result_Syphilis}}</td>
+			<td>{{des.SampleNo4_Result_Syphilis}}</td>
+			<td>{{des.SampleNo5_Result_Syphilis}}</td>
+		</tr>
+		</div>
+	</table>
+	</div>
+	</div>
+
+	<br><br>
+
+	<div class="row">
+		<div class="col-sm-10 col-sm-offset-1">
+			<table style="width:100%">
+				<tr>
+					<th colspan=5>
+						<h2 style="text-align:center;">Samples6&7-WholeBloodinEDTAVials</h2>
+							</th>
+				</tr>
+				<tr>
+					<th>S.no.</th>
+					<th>Parameter</th>
+					<th>Methodolgy</th>
+					<th>SampleNo.6</th>
+					<th>SampleNo.7</th>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>MalariaParasite</td>
+					<td>{{des.Methodology_Malaria_Parasite}}</td>
+					<td>{{des.SampleNo6_Malaria_Parasite}}</td>
+					<td>{{des.SampleNo7_Malaria_Parasite}}</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Hemoglobin(gm/dl)</td>
+					<td>{{des.Methodology_Haemoglobin}}</td>
+					<td>{{des.SampleNo6_Haemoglobin}}</td>
+					<td>{{des.SampleNo7_Haemoglobin}}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<br><br>
+
+
+	<div class="row">
+		<div class="col-sm-10 col-sm-offset-1">
+		<table style="width:100%;">
+			<tr>
+				<th colspan=9>
+					<h2 style="text-align:center;">SampleNo.6(Patient)-WhiteBloodinEDTAVials</h2>
+				</th>
+			</tr>
+			<tr>
+				<th colspan="4">7.DirectAnti-globulinTest(DAT)(SampleNo.6)</th>
+				<td colspan="5">{{des.SampleNo6_Direct_Anti_globin_Test}} Positive/Negative</td>
+			</tr>
+	<tr>
+		<td colspan=9>
+		<h3 style="text-align:center;">8.ABORh(D)Grouping&typingTechniqueUsed(SampleNo.6)</h3>
+		</td>
+	</tr>
+	<tr>
+		<th>ScoringSystem</th>
+		<td colspan=7>ABORh(D)Grouping&Typing</td>
+		<th>Method</th>
+	</tr>
+	<tr>
+		<th>0-4+(SelectAppropriately)</th>
+		<td>Slide</td>
+		<td>Title</td>
+		<td>Tube</td>
+		<td>Column(Gel)</td>
+		<td>Column(Bead)</td>
+		<td>MicroPlate</td>
+		<td>OtherSpecify</td>
+		<td>{{des.cft_method_ABO_and_Rh_on_Patient_S6}}</td>
+	</tr>
+	<tr>
+		<th>PatientIdentification</th>
+		<th colspan="4">Cell(Forward)Typing</th>
+		<th colspan="3">Serum(Reverse)Group</th>
+		<th rowspan="2">ABO&Rh(D)Result</th>
+	</tr>
+	<tr>
+		<th rowspan="2">Patient-1SampleNo.6</th>
+		<th>AntiA</th>
+		<th>AntiB</th>
+		<th>AntiAB+</th>
+		<th>AntiD</th>
+		<th>A1cells</th>
+		<th>Bcells</th>
+		<th>Ocells</th>
+	</tr>
+	<tr>
+		<td>{{des.Anti_A_S6}}</td>
+		<td>{{des.Anti_B_S6}}</td>
+		<td>{{des.Anti_ABpositive_S6}}</td>
+		<td>{{des.Anti_D_S6}}</td>
+		<td>{{des.Acells_S6}}</td>
+		<td>{{des.Bcells_S6}}</td>
+		<td>{{des.Ocells_S6}}</td>
+		<td>{{des.Result_S6}}</td>
+	</tr>
+	</table>
+	</div>
+	</div>
+
+	<br><br>
+
+	<div class="row">
+		<div class="col-sm-10 col-sm-offset-1">
+		<table style="width:100%;">
+			<tr>
+				<td colspan=9>
+					<h3 style="text-align:center;">9.ABORh(D)Grouping&typingTechniqueUsed(SampleNo.7,8&9)</h3>
+				</td>
+			</tr>
+			<tr>
+				<th>ScoringSystem</th>
+				<td colspan=7>ABORh(D)Grouping&Typing</td>
+				<th>Method</th>
+			</tr>
+			<tr>
+				<th>0-4+(SelectAppropriately)</th>
+				<td>Slide</td>
+				<td>Title</td>
+				<td>Tube</td>
+				<td>Column(Gel)</td>
+				<td>Column(Bead)</td>
+				<td>MicroPlate</td>
+				<td>OtherSpecify</td>
+				<td>{{des.method_ABO_and_Rh_on_Donors}}</td>
+			</tr>
+			<tr>
+				<th>PatientIdentification</th>
+				<th colspan="4">Cell(Forward)Typing</th>
+				<th colspan="3">Serum(Reverse)Group</th>
+				<th rowspan="2">ABO&Rh(D)Result</th>
+			</tr>
+			<tr>
+				<th rowspan="2">DonorUnitNo.-1SampleNo.7</th>
+					<th>AntiA</th>
+					<th>AntiB</th>
+					<th>AntiAB+</th>
+					<th>AntiD</th>
+					<th>A1cells</th>
+					<th>Bcells</th>
+					<th>Ocells</th>
+			</tr>
+			<tr>
+				<td>{{des.Anti_A_S7}}</td>
+				<td>{{des.Anti_B_S7}}</td>
+				<td>{{des.Anti_ABpositive_S7}}</td>
+				<td>{{des.Anti_D_S7}}</td>
+				<td>{{des.Acells_S7}}</td>
+				<td>{{des.Bcells_S7}}</td>
+				<td>{{des.Ocells_S7}}</td>
+				<td>{{des.Result_S7}}</td>
+			</tr>
+			<tr>
+				<th>DonorUnitNo.-2SampleNo.8</th>
+				<td>{{des.Anti_A_S8}}</td>
+				<td>{{des.Anti_B_S8}}</td>
+				<td>{{des.Anti_ABpositive_S8}}</td>
+				<td>{{des.Anti_D_S8}}</td>
+				<td>{{des.Acells_S8}}</td>
+				<td>{{des.Bcells_S8}}</td>
+				<td>{{des.Ocells_S8}}</td>
+				<td>{{des.Result_S8}}</td>
+			</tr>
+			<tr>
+				<th>DonorUnitNo.-3SampleNo.9</th>
+				<td>{{des.Anti_A_S9}}</td>
+				<td>{{des.Anti_B_S9}}</td>
+				<td>{{des.Anti_ABpositive_S9}}</td>
+				<td>{{des.Anti_D_S9}}</td>
+				<td>{{des.Acells_S9}}</td>
+				<td>{{des.Bcells_S9}}</td>
+				<td>{{des.Ocells_S9}}</td>
+				<td>{{des.Result_S9}}</td>
+			</tr>
+		</table>
+		</div>
+	</div>
+
+	<br><br>
+
+	<div class="row">
+		<div class="col-sm-10 col-sm-offset-1">
+			<table style="width:100%">
+				<tr>
+					<th>MethodUsed</th>
+					<th>Tube</th>
+					<th>Column</th>
+					<th colspan="1">Other**</th>
+					<th>{{des.MethodUsed}}</th>
+					<th rowspan="5">Wouldyoutransferthisunit?</th>
+				</tr>
+				<tr>
+					<th colspan="5" style="text-align:center;">
+						<h3>10.Compatibilitytesting(SampleNo.10,11&12)</h3>
+					</th>
+				</tr>
+				<tr>
+					<th rowspan="2"></th>
+					<th></th>
+					<th colspan="2">ScoringSystem</th>
+					<th>0-4+</th>
+				</tr>
+				<tr>
+					<th>Saline</th>
+					<th colspan="2">WithAdditiveLISS/Others**</th>
+					<th></th>
+				</tr>
+				<tr>
+					<th>SampleNoofDonor&Recipient</th>
+					<th>RoomTemperature</th>
+					<th>RoomTemperature</th>
+					<th>37degreeC</th>
+					<th>IAHG</th>
+				</tr>
+				<tr>
+					<th>SampleNo.(Donor)-7<br>SampleNo.(Recipient)-10</th>
+					<td>{{des.SampleNo7D_and_10R_Saline_Room_temp}}</td>
+					<td>{{des.SampleNo7D_and_10R_Additive_Room_temp}}</td>
+					<td>{{des.SampleNo7D_and_10R_Additive_37degC}}</td>
+					<td>{{des.SampleNo7D_and_10R_IAHG}}</td>
+					<td>{{des.Would_transfer7to10}} Yes/No</td>
+				</tr>
+				<tr>
+					<th>SampleNo.(Donor)-8<br>SampleNo.(Recipient)-11</th>
+					<td>{{des.SampleNo8D_and_11R_Saline_Room_temp}}</td>
+					<td>{{des.SampleNo8D_and_11R_Additive_Room_temp}}</td>
+					<td>{{des.SampleNo8D_and_11R_Additive_37degC}}</td>
+					<td>{{des.SampleNo8D_and_11R_IAHG}}</td>
+					<td>{{des.Would_transfer8to11}} Yes/No</td>
+				</tr>
+				<tr>
+					<th>SampleNo.(Donor)-9<br>SampleNo.(Recipient)-12</th>
+					<td>{{des.SampleNo9D_and_12R_Saline_Room_temp}}</td>
+					<td>{{des.SampleNo9D_and_12R_Additive_Room_temp}}</td>
+					<td>{{des.SampleNo9D_and_12R_Additive_37degC}}</td>
+					<td>{{des.SampleNo9D_and_12R_IAHG}}</td>
+					<td>{{des.Would_transfer9to12}}Yes/No</td>
+				</tr>
+				<tr>
+					<th>**SpecifyOtherAdditive</th>
+					<td colspan="3">{{des.Specifiy_additive}}</td>
+					<th>***OtherMethod</th>
+					<td>{{des.Specifiy_other_method}}</td>
+				</tr>
+			</table>
+			</div>
+		</div>
+
+		<br>
+
+	</body>
+ 
+	</html>
