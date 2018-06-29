@@ -9,25 +9,20 @@ def index(request):
 	return HttpResponse('<h1>Welcome</h1>')
 
 def searchid(request):
-	form_class=Beqassearch
-	form = form_class(request.POST or None)
 	if request.method=="POST":
 		form=Beqassearch(request.POST)
 		if form.is_valid():
-			beqasall=Beqas.objects.all()
-			flag=0
-			for des in beqasall:
-				if des.patientId==form.patId:
-					flag=1
-					return render(request,'ircs/beqasdisplay.html',{'des':des})
-			if flag==0:
-				return HttpResponse('<h1> elem not found</h1>')
+			val = int(form['patId'].value())
+			try:
+				b = Beqas.objects.get(patientId = val)
+				return render(request,'ircs/beqasdisplay.html',{'des':b})
+			except:
+				return HttpResponse('<h1> ID not found</h1>')
 		else:
 			form=Beqassearch()
-	
-	return render(request,'ircs/searchid.html',{'form':form})		
-
-
+	else:
+		form = Beqassearch()
+		return render(request,'ircs/searchid.html',{'form':form})
 
 def beqas_form(request):
 	if request.method=="POST":
