@@ -7,4 +7,5 @@ urlpatterns = [
 
 	path('beqas/',views.beqas_form),
 	path('beqassearch/',views.searchid),
+	path('beqascycle/',views.searchby),
 ]

@@ -1,10 +1,16 @@
 from django.db import models
 from django.core.validators import MinValueValidator
 from django.urls import reverse
+from datetime import date
 
 # Create your models here.
 class Beqas(models.Model):
 	choice=(('n','neg'),('1','1'),('2','2'),('3','3'),('4','4'))
+
+	#im=models.ImageField()
+	cycleno=models.IntegerField(default=1)
+	year=models.IntegerField(default=2018)
+	#date=models.DateField(("Date"), default=date.today)
 	patientId=models.PositiveIntegerField(default=0,unique=True,validators=[MinValueValidator(1)])
 	Methodology_HBsAg=models.CharField(blank=True , max_length=100)
 	CutOffValue_HBsAg=models.CharField(blank=True , max_length=100)

@@ -35,7 +35,16 @@
 <body>
 	<h1 style="text-align:center;">BEQAS</h1>
 	<h3 style="text-align:center;">Blood Bank External Quality Assessment Scheme</h3>
-	<h3 style="text-align:center;">CycleNo.1</h3>
+	<h3 style="text-align:center;">CycleNo.{{des.cycleno}}</h3>
+
+	<!--
+	<div class="col-sm-offset-1">
+		Image:{{form.im}}
+	</div>
+	-->
+	<div class="col-sm-offset-1">
+		<h3>Year: {{des.year}}</h3>
+	</div>
 	<div class="form-group col-sm-offset-2">
 		<label class="control-label col-sm-2">
 			Patient Id={{des.patientId}}
@@ -80,66 +89,66 @@
 		<tr>
 			<td>1</td>
 			<td>HBsAg</td>
-			<td>{{des.Methodology_HBsAg}}</td>
-			<td>{{des.CutOffValue_HBsAg}}</td>
-			<td>{{des.SampleNo1_OD_HBsAg}}</td>
-			<td>{{des.SampleNo2_OD_HBsAg}}</td>
-			<td>{{des.SampleNo3_OD_HBsAg}}</td>
-			<td>{{des.SampleNo4_OD_HBsAg}}</td>
-			<td>{{des.SampleNo5_OD_HBsAg}}</td>
-			<td>{{des.SampleNo1_Result_HBsAg}}</td>
-			<td>{{des.SampleNo2_Result_HBsAg}}</td>
-			<td>{{des.SampleNo3_Result_HBsAg}}</td>
-			<td>{{des.SampleNo4_Result_HBsAg}}</td>
-			<td>{{des.SampleNo5_Result_HBsAg}}</td>
+			<td style="color:red;">{{des.Methodology_HBsAg}}</td>
+			<td style="color:red;">{{des.CutOffValue_HBsAg}}</td>
+			<td style="color:red;">{{des.SampleNo1_OD_HBsAg}}</td>
+			<td style="color:red;">{{des.SampleNo2_OD_HBsAg}}</td>
+			<td style="color:red;">{{des.SampleNo3_OD_HBsAg}}</td>
+			<td style="color:red;">{{des.SampleNo4_OD_HBsAg}}</td>
+			<td style="color:red;">{{des.SampleNo5_OD_HBsAg}}</td>
+			<td style="color:red;">{{des.SampleNo1_Result_HBsAg}}</td>
+			<td style="color:red;">{{des.SampleNo2_Result_HBsAg}}</td>
+			<td style="color:red;">{{des.SampleNo3_Result_HBsAg}}</td>
+			<td style="color:red;">{{des.SampleNo4_Result_HBsAg}}</td>
+			<td style="color:red;">{{des.SampleNo5_Result_HBsAg}}</td>
 		</tr>
 		<tr>
 			<td>2</td>
 			<td>Anti-HIV1&2</td>
-			<td>{{des.Methodology_Anti_HIV}}</td>
-			<td>{{des.CutOffValue_Anti_HIV}}</td>
-			<td>{{des.SampleNo1_OD_Anti_HIV}}</td>
-			<td>{{des.SampleNo2_OD_Anti_HIV}}</td>
-			<td>{{des.SampleNo3_OD_Anti_HIV}}</td>
-			<td>{{des.SampleNo4_OD_Anti_HIV}}</td>
-			<td>{{des.SampleNo5_OD_Anti_HIV}}</td>
-			<td>{{des.SampleNo1_Result_Anti_HIV}}</td>
-			<td>{{des.SampleNo2_Result_Anti_HIV}}</td>
-			<td>{{des.SampleNo3_Result_Anti_HIV}}</td>
-			<td>{{des.SampleNo4_Result_Anti_HIV}}</td>
-			<td>{{des.SampleNo5_Result_Anti_HIV}}</td>
+			<td style="color:red;">{{des.Methodology_Anti_HIV}}</td>
+			<td style="color:red;">{{des.CutOffValue_Anti_HIV}}</td>
+			<td style="color:red;">{{des.SampleNo1_OD_Anti_HIV}}</td>
+			<td style="color:red;">{{des.SampleNo2_OD_Anti_HIV}}</td>
+			<td style="color:red;">{{des.SampleNo3_OD_Anti_HIV}}</td>
+			<td style="color:red;">{{des.SampleNo4_OD_Anti_HIV}}</td>
+			<td style="color:red;">{{des.SampleNo5_OD_Anti_HIV}}</td>
+			<td style="color:red;">{{des.SampleNo1_Result_Anti_HIV}}</td>
+			<td style="color:red;">{{des.SampleNo2_Result_Anti_HIV}}</td>
+			<td style="color:red;">{{des.SampleNo3_Result_Anti_HIV}}</td>
+			<td style="color:red;">{{des.SampleNo4_Result_Anti_HIV}}</td>
+			<td style="color:red;">{{des.SampleNo5_Result_Anti_HIV}}</td>
 			</tr>
 			<tr>
 			<td>3</td>
 			<td>Anti-HCV</td>
-			<td>{{des.Methodology_Anti_HCV}}</td>
-			<td>{{des.CutOffValue_Anti_HCV}}</td>
-			<td>{{des.SampleNo1_OD_Anti_HCV}}</td>
-			<td>{{des.SampleNo2_OD_Anti_HCV}}</td>
-			<td>{{des.SampleNo3_OD_Anti_HCV}}</td>
-			<td>{{des.SampleNo4_OD_Anti_HCV}}</td>
-			<td>{{des.SampleNo5_OD_Anti_HCV}}</td>
-			<td>{{des.SampleNo1_Result_Anti_HCV}}</td>
-			<td>{{des.SampleNo2_Result_Anti_HCV}}</td>
-			<td>{{des.SampleNo3_Result_Anti_HCV}}</td>
-			<td>{{des.SampleNo4_Result_Anti_HCV}}</td>
-			<td>{{des.SampleNo5_Result_Anti_HCV}}</td>
+			<td style="color:red;">{{des.Methodology_Anti_HCV}}</td>
+			<td style="color:red;">{{des.CutOffValue_Anti_HCV}}</td>
+			<td style="color:red;">{{des.SampleNo1_OD_Anti_HCV}}</td>
+			<td style="color:red;">{{des.SampleNo2_OD_Anti_HCV}}</td>
+			<td style="color:red;">{{des.SampleNo3_OD_Anti_HCV}}</td>
+			<td style="color:red;">{{des.SampleNo4_OD_Anti_HCV}}</td>
+			<td style="color:red;">{{des.SampleNo5_OD_Anti_HCV}}</td>
+			<td style="color:red;">{{des.SampleNo1_Result_Anti_HCV}}</td>
+			<td style="color:red;">{{des.SampleNo2_Result_Anti_HCV}}</td>
+			<td style="color:red;">{{des.SampleNo3_Result_Anti_HCV}}</td>
+			<td style="color:red;">{{des.SampleNo4_Result_Anti_HCV}}</td>
+			<td style="color:red;">{{des.SampleNo5_Result_Anti_HCV}}</td>
 		</tr>
 		<tr>
 			<td>4</td>
 			<td>Syphilis</td>
-			<td>{{des.Methodology_Syphilis}}</td>
-			<td>{{des.CutOffValue_Syphilis}}</td>
-			<td>{{des.SampleNo1_OD_Syphilis}}</td>
-			<td>{{des.SampleNo2_OD_Syphilis}}</td>
-			<td>{{des.SampleNo3_OD_Syphilis}}</td>
-			<td>{{des.SampleNo4_OD_Syphilis}}</td>
-			<td>{{des.SampleNo5_OD_Syphilis}}</td>
-			<td>{{des.SampleNo1_Result_Syphilis}}</td>
-			<td>{{des.SampleNo2_Result_Syphilis}}</td>
-			<td>{{des.SampleNo3_Result_Syphilis}}</td>
-			<td>{{des.SampleNo4_Result_Syphilis}}</td>
-			<td>{{des.SampleNo5_Result_Syphilis}}</td>
+			<td style="color:red;">{{des.Methodology_Syphilis}}</td>
+			<td style="color:red;">{{des.CutOffValue_Syphilis}}</td>
+			<td style="color:red;">{{des.SampleNo1_OD_Syphilis}}</td>
+			<td style="color:red;">{{des.SampleNo2_OD_Syphilis}}</td>
+			<td style="color:red;">{{des.SampleNo3_OD_Syphilis}}</td>
+			<td style="color:red;">{{des.SampleNo4_OD_Syphilis}}</td>
+			<td style="color:red;">{{des.SampleNo5_OD_Syphilis}}</td>
+			<td style="color:red;">{{des.SampleNo1_Result_Syphilis}}</td>
+			<td style="color:red;">{{des.SampleNo2_Result_Syphilis}}</td>
+			<td style="color:red;">{{des.SampleNo3_Result_Syphilis}}</td>
+			<td style="color:red;">{{des.SampleNo4_Result_Syphilis}}</td>
+			<td style="color:red;">{{des.SampleNo5_Result_Syphilis}}</td>
 		</tr>
 		</div>
 	</table>
@@ -166,16 +175,16 @@
 				<tr>
 					<td>5</td>
 					<td>MalariaParasite</td>
-					<td>{{des.Methodology_Malaria_Parasite}}</td>
-					<td>{{des.SampleNo6_Malaria_Parasite}}</td>
-					<td>{{des.SampleNo7_Malaria_Parasite}}</td>
+					<td style="color:red;">{{des.Methodology_Malaria_Parasite}}</td>
+					<td style="color:red;">{{des.SampleNo6_Malaria_Parasite}}</td>
+					<td style="color:red;">{{des.SampleNo7_Malaria_Parasite}}</td>
 				</tr>
 				<tr>
 					<td>6</td>
 					<td>Hemoglobin(gm/dl)</td>
-					<td>{{des.Methodology_Haemoglobin}}</td>
-					<td>{{des.SampleNo6_Haemoglobin}}</td>
-					<td>{{des.SampleNo7_Haemoglobin}}</td>
+					<td style="color:red;">{{des.Methodology_Haemoglobin}}</td>
+					<td style="color:red;">{{des.SampleNo6_Haemoglobin}}</td>
+					<td style="color:red;">{{des.SampleNo7_Haemoglobin}}</td>
 				</tr>
 			</table>
 		</div>
@@ -194,8 +203,7 @@
 			</tr>
 			<tr>
 				<th colspan="4">7.DirectAnti-globulinTest(DAT)(SampleNo.6)</th>
-				<td colspan="5">
-				{{des.SampleNo6_Direct_Anti_globin_Test}} </td>
+				<td colspan="5" style="color:red;">{{des.SampleNo6_Direct_Anti_globin_Test}} ,true=Positive,false=Negative</td>
 			</tr>
 	<tr>
 		<td colspan=9>
@@ -216,7 +224,7 @@
 		<td>Column(Bead)</td>
 		<td>MicroPlate</td>
 		<td>OtherSpecify</td>
-		<td>{{des.cft_method_ABO_and_Rh_on_Patient_S6}}</td>
+		<td style="color:red;" style="color:red;">{{des.cft_method_ABO_and_Rh_on_Patient_S6}}</td>
 	</tr>
 	<tr>
 		<th>PatientIdentification</th>
@@ -235,14 +243,14 @@
 		<th>Ocells</th>
 	</tr>
 	<tr>
-		<td>{{des.Anti_A_S6}}</td>
-		<td>{{des.Anti_B_S6}}</td>
-		<td>{{des.Anti_ABpositive_S6}}</td>
-		<td>{{des.Anti_D_S6}}</td>
-		<td>{{des.Acells_S6}}</td>
-		<td>{{des.Bcells_S6}}</td>
-		<td>{{des.Ocells_S6}}</td>
-		<td>{{des.Result_S6}}</td>
+		<td style="color:red;">{{des.Anti_A_S6}}</td>
+		<td style="color:red;">{{des.Anti_B_S6}}</td>
+		<td style="color:red;">{{des.Anti_ABpositive_S6}}</td>
+		<td style="color:red;">{{des.Anti_D_S6}}</td>
+		<td style="color:red;">{{des.Acells_S6}}</td>
+		<td style="color:red;">{{des.Bcells_S6}}</td>
+		<td style="color:red;">{{des.Ocells_S6}}</td>
+		<td style="color:red;">{{des.Result_S6}}</td>
 	</tr>
 	</table>
 	</div>
@@ -272,7 +280,7 @@
 				<td>Column(Bead)</td>
 				<td>MicroPlate</td>
 				<td>OtherSpecify</td>
-				<td>{{des.method_ABO_and_Rh_on_Donors}}</td>
+				<td style="color:red;" style="color:red;">{{des.method_ABO_and_Rh_on_Donors}}</td>
 			</tr>
 			<tr>
 				<th>PatientIdentification</th>
@@ -291,36 +299,36 @@
 					<th>Ocells</th>
 			</tr>
 			<tr>
-				<td>{{des.Anti_A_S7}}</td>
-				<td>{{des.Anti_B_S7}}</td>
-				<td>{{des.Anti_ABpositive_S7}}</td>
-				<td>{{des.Anti_D_S7}}</td>
-				<td>{{des.Acells_S7}}</td>
-				<td>{{des.Bcells_S7}}</td>
-				<td>{{des.Ocells_S7}}</td>
-				<td>{{des.Result_S7}}</td>
+				<td style="color:red;">{{des.Anti_A_S7}}</td>
+				<td style="color:red;">{{des.Anti_B_S7}}</td>
+				<td style="color:red;">{{des.Anti_ABpositive_S7}}</td>
+				<td style="color:red;">{{des.Anti_D_S7}}</td>
+				<td style="color:red;">{{des.Acells_S7}}</td>
+				<td style="color:red;">{{des.Bcells_S7}}</td>
+				<td style="color:red;">{{des.Ocells_S7}}</td>
+				<td style="color:red;">{{des.Result_S7}}</td>
 			</tr>
 			<tr>
 				<th>DonorUnitNo.-2SampleNo.8</th>
-				<td>{{des.Anti_A_S8}}</td>
-				<td>{{des.Anti_B_S8}}</td>
-				<td>{{des.Anti_ABpositive_S8}}</td>
-				<td>{{des.Anti_D_S8}}</td>
-				<td>{{des.Acells_S8}}</td>
-				<td>{{des.Bcells_S8}}</td>
-				<td>{{des.Ocells_S8}}</td>
-				<td>{{des.Result_S8}}</td>
+				<td style="color:red;">{{des.Anti_A_S8}}</td>
+				<td style="color:red;">{{des.Anti_B_S8}}</td>
+				<td style="color:red;">{{des.Anti_ABpositive_S8}}</td>
+				<td style="color:red;">{{des.Anti_D_S8}}</td>
+				<td style="color:red;">{{des.Acells_S8}}</td>
+				<td style="color:red;">{{des.Bcells_S8}}</td>
+				<td style="color:red;">{{des.Ocells_S8}}</td>
+				<td style="color:red;">{{des.Result_S8}}</td>
 			</tr>
 			<tr>
 				<th>DonorUnitNo.-3SampleNo.9</th>
-				<td>{{des.Anti_A_S9}}</td>
-				<td>{{des.Anti_B_S9}}</td>
-				<td>{{des.Anti_ABpositive_S9}}</td>
-				<td>{{des.Anti_D_S9}}</td>
-				<td>{{des.Acells_S9}}</td>
-				<td>{{des.Bcells_S9}}</td>
-				<td>{{des.Ocells_S9}}</td>
-				<td>{{des.Result_S9}}</td>
+				<td style="color:red;">{{des.Anti_A_S9}}</td>
+				<td style="color:red;">{{des.Anti_B_S9}}</td>
+				<td style="color:red;">{{des.Anti_ABpositive_S9}}</td>
+				<td style="color:red;">{{des.Anti_D_S9}}</td>
+				<td style="color:red;">{{des.Acells_S9}}</td>
+				<td style="color:red;">{{des.Bcells_S9}}</td>
+				<td style="color:red;">{{des.Ocells_S9}}</td>
+				<td style="color:red;">{{des.Result_S9}}</td>
 			</tr>
 		</table>
 		</div>
@@ -336,7 +344,7 @@
 					<th>Tube</th>
 					<th>Column</th>
 					<th colspan="1">Other**</th>
-					<th>{{des.MethodUsed}}</th>
+					<th style="color:red;">{{des.MethodUsed}}</th>
 					<th rowspan="5">Wouldyoutransferthisunit?</th>
 				</tr>
 				<tr>
@@ -364,33 +372,33 @@
 				</tr>
 				<tr>
 					<th>SampleNo.(Donor)-7<br>SampleNo.(Recipient)-10</th>
-					<td>{{des.SampleNo7D_and_10R_Saline_Room_temp}}</td>
-					<td>{{des.SampleNo7D_and_10R_Additive_Room_temp}}</td>
-					<td>{{des.SampleNo7D_and_10R_Additive_37degC}}</td>
-					<td>{{des.SampleNo7D_and_10R_IAHG}}</td>
-					<td>{{des.Would_transfer7to10}} </td>
+					<td style="color:red;">{{des.SampleNo7D_and_10R_Saline_Room_temp}}</td>
+					<td style="color:red;">{{des.SampleNo7D_and_10R_Additive_Room_temp}}</td>
+					<td style="color:red;">{{des.SampleNo7D_and_10R_Additive_37degC}}</td>
+					<td style="color:red;">{{des.SampleNo7D_and_10R_IAHG}}</td>
+					<td style="color:red;">{{des.Would_transfer7to10}}</td>
 				</tr>
 				<tr>
 					<th>SampleNo.(Donor)-8<br>SampleNo.(Recipient)-11</th>
-					<td>{{des.SampleNo8D_and_11R_Saline_Room_temp}}</td>
-					<td>{{des.SampleNo8D_and_11R_Additive_Room_temp}}</td>
-					<td>{{des.SampleNo8D_and_11R_Additive_37degC}}</td>
-					<td>{{des.SampleNo8D_and_11R_IAHG}}</td>
-					<td>{{des.Would_transfer8to11}} </td>
+					<td style="color:red;">{{des.SampleNo8D_and_11R_Saline_Room_temp}}</td>
+					<td style="color:red;">{{des.SampleNo8D_and_11R_Additive_Room_temp}}</td>
+					<td style="color:red;">{{des.SampleNo8D_and_11R_Additive_37degC}}</td>
+					<td style="color:red;">{{des.SampleNo8D_and_11R_IAHG}}</td>
+					<td style="color:red;">{{des.Would_transfer8to11}}</td>
 				</tr>
 				<tr>
 					<th>SampleNo.(Donor)-9<br>SampleNo.(Recipient)-12</th>
-					<td>{{des.SampleNo9D_and_12R_Saline_Room_temp}}</td>
-					<td>{{des.SampleNo9D_and_12R_Additive_Room_temp}}</td>
-					<td>{{des.SampleNo9D_and_12R_Additive_37degC}}</td>
-					<td>{{des.SampleNo9D_and_12R_IAHG}}</td>
-					<td>{{des.Would_transfer9to12}}</td>
+					<td style="color:red;">{{des.SampleNo9D_and_12R_Saline_Room_temp}}</td>
+					<td style="color:red;">{{des.SampleNo9D_and_12R_Additive_Room_temp}}</td>
+					<td style="color:red;">{{des.SampleNo9D_and_12R_Additive_37degC}}</td>
+					<td style="color:red;">{{des.SampleNo9D_and_12R_IAHG}}</td>
+					<td style="color:red;">{{des.Would_transfer9to12}}</td>
 				</tr>
 				<tr>
 					<th>**SpecifyOtherAdditive</th>
-					<td colspan="3">{{des.Specifiy_additive}}</td>
+					<td colspan="3" style="color:red;">{{des.Specifiy_additive}}</td>
 					<th>***OtherMethod</th>
-					<td>{{des.Specifiy_other_method}}</td>
+					<td style="color:red;">{{des.Specifiy_other_method}}</td>
 				</tr>
 			</table>
 			</div>

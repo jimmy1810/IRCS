@@ -40,11 +40,15 @@
 				<div class="col-sm-6 col-sm-offset-4">
 					<h1 style="color:Red; font-size:40px;"> Indian Red Cross Society</h1>
 
-					<h3>&nbsp Search By Patient ID for Beqas</h3>
+					<h3>&nbsp Search By Cycle Number and Year for Beqas</h3>
 
-					<label>&nbsp &nbsp {{ form.patId.label_tag }}</label>
+					<label>&nbsp &nbsp {{ form.cyno.label_tag }}</label>
 					<br>
-					<div>&nbsp &nbsp {{form.patId}}</div>
+					<div>&nbsp &nbsp {{form.cyno}}</div>
+					<br>
+					<label>&nbsp &nbsp {{ form.year.label_tag }}</label>
+					<br>
+					<div>&nbsp &nbsp {{form.year}}</div>
 					<br>
 					<div class="form-group">
 						<div class=" col-sm-2">
@@ -54,11 +58,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-sm-7 col-sm-offset-4">	
-					<h3><strong>Note:</strong> Please enter valid Patient id to get the details</h3>
-				</div>
-			</div>	
 		</form>
 		
 	</body>

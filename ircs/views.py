@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http.response import HttpResponse
 from django.http import HttpResponseRedirect
-from .forms import BeqasCreate,Beqassearch
+from .forms import BeqasCreate,Beqassearch,Beqascycle
 from .models import Beqas
 
 
@@ -40,3 +40,21 @@ def beqas_form(request):
 
 	return render(request,'ircs/beqas.html',{'form':form})
 	
+def searchby(request):
+	if request.method=="POST":
+		form=Beqascycle(request.POST)
+		if form.is_valid():
+			val = int(form['cyno'].value())
+			yr= int(form['year'].value())
+			try:
+				b = Beqas.objects.filter(cycleno = val , year= yr)
+				return render(request,'ircs/cycledisplay.html',{'des':b})
+			except:
+				return HttpResponse('<h1>Cycle Number not found</h1>')
+		else:
+			form=Beqascycle()
+	else:
+		form = Beqascycle()
+		return render(request,'ircs/searchby.html',{'form':form})
+
+

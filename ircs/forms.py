@@ -8,3 +8,7 @@ class BeqasCreate(forms.ModelForm):
 		
 class Beqassearch(forms.Form):
 	patId=forms.IntegerField()
+
+class Beqascycle(forms.Form):
+	cyno=forms.IntegerField(initial=1)	
+	year=forms.IntegerField(initial=2018)

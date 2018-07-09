@@ -34,32 +34,24 @@
 <body>
 	<br>
 	<br>
-		<form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
-			{% csrf_token %}
-			<div class="row">
-				<div class="col-sm-6 col-sm-offset-4">
-					<h1 style="color:Red; font-size:40px;"> Indian Red Cross Society</h1>
-
-					<h3>&nbsp Search By Patient ID for Beqas</h3>
-
-					<label>&nbsp &nbsp {{ form.patId.label_tag }}</label>
-					<br>
-					<div>&nbsp &nbsp {{form.patId}}</div>
-					<br>
-					<div class="form-group">
-						<div class=" col-sm-2">
-							&nbsp &nbsp 
-							<button type="submit" class="btn btn-success"> Submit</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-7 col-sm-offset-4">	
-					<h3><strong>Note:</strong> Please enter valid Patient id to get the details</h3>
-				</div>
-			</div>	
-		</form>
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<h1>&nbsp &nbsp BEQAS</h1>
+			<h3>Filtered by Cycle number and year</h3>
+			<table>
+				<tr>
+					<th>Patient Id</th>
+					<th>Year</th>
+				</tr>
+				{% for b in des %}
+				<tr>
+				<td>{{b.patientId}}</td>
+				<td>{{b.year}}</td>
+				</tr>	
+				{% endfor %}
+			</table>
+		</div>
+	</div>
 		
 	</body>
 </html>
